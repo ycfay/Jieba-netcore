@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using JiebaNet.Segmenter.Common;
-using Newtonsoft.Json;
 
 namespace JiebaNet.Segmenter.PosSeg
 {
@@ -64,16 +64,16 @@ namespace JiebaNet.Segmenter.PosSeg
         private static void LoadModel()
         {
             var startJson = FileExtension.ReadEmbeddedAllLine(ConfigManager.PosProbStartFile);
-            _startProbs = JsonConvert.DeserializeObject<IDictionary<string, double>>(startJson);
+            _startProbs = JsonSerializer.Deserialize<IDictionary<string, double>>(startJson);
 
             var transJson = FileExtension.ReadEmbeddedAllLine(ConfigManager.PosProbTransFile);
-            _transProbs = JsonConvert.DeserializeObject<IDictionary<string, IDictionary<string, double>>>(transJson);
+            _transProbs = JsonSerializer.Deserialize<IDictionary<string, IDictionary<string, double>>>(transJson);
 
             var emitJson = FileExtension.ReadEmbeddedAllLine(ConfigManager.PosProbEmitFile);
-            _emitProbs = JsonConvert.DeserializeObject<IDictionary<string, IDictionary<char, double>>>(emitJson);
+            _emitProbs = JsonSerializer.Deserialize<IDictionary<string, IDictionary<char, double>>>(emitJson);
 
             var tabJson = FileExtension.ReadEmbeddedAllLine(ConfigManager.CharStateTabFile);
-            _stateTab = JsonConvert.DeserializeObject<IDictionary<char, List<string>>>(tabJson);
+            _stateTab = JsonSerializer.Deserialize<IDictionary<char, List<string>>>(tabJson);
         }
 
         // TODO: change sentence to obs?
