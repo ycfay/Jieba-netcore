@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Lucene.Jieba.Segment.NetCore</PackageId>
+    <PackageId>Lucene.Jieba.Segment.Core</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>richie</Authors>
-    <Description>JIEba.Lucene.Net is an analyzer tools for lucene.net which is kind to chinese</Description>
+    <Description>Jieba.Lucene.Net is an analyzer tools for lucene.net which is kind to chinese</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/ycfay/Jieba-netcore</PackageProjectUrl>
-    <Copyright>Copyright 2019 (c) AgileLabs. All rights reserved.</Copyright>
+    <Copyright>Copyright 2024 (c) AgileLabs. All rights reserved.</Copyright>
     <PackageTags>Analyzer Segment JIEba.net core 2.0</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>szjz</Company>
