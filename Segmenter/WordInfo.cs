@@ -8,9 +8,13 @@ namespace JiebaNet.Segmenter
             this.value = value;
             this.position = position;
         }
-        //分词的内容
+        /// <summary>
+        /// 分词的内容
+        /// </summary>
         public string value { get; set; }
-        //分词的初始位置
+        /// <summary>
+        /// 分词的初始位置
+        /// </summary>
         public int position { get; set; }
     }
 }
