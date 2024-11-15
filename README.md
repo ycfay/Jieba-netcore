@@ -1,6 +1,6 @@
 # JIEba-netcore
 
-基于[jieba.NETCore](https://github.com/linezero/jieba.NET) 
+基于[jieba.NETCore](https://github.com/ycfay/Jieba-netcore) 
 
 在.net core版的JIEba分词上，做了修改，使其支持net core2.0 和支持[Lucene.net](https://github.com/apache/lucenenet)接口
 ps: 修改了JIEba分词，导致的高亮bug
@@ -8,7 +8,7 @@ ps: 修改了JIEba分词，导致的高亮bug
 # Available On NuGet
 
 
- >[Lucene.JIEba.net](https://www.nuget.org/packages/Lucene.JIEba.net/)
+ >[Lucene.JIEba.net](https://www.nuget.org/packages/Lucene.Jieba.Segment.Core/)
 
 
 # 集成到Lucene.Net示例
